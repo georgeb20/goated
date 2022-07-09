@@ -124,7 +124,7 @@ async def goated(ctx):
 
             #if the message author is the same as the previous goat, we pass
             if ctx.author.id == db["serverid"][server_index]["former_goat"]:
-                await ctx.send(f'{user.mention} former goats need a break')
+                await ctx.send(f'{ctx.author.mention} former goats need a break')
                 skip_goat=1
                 break
 
